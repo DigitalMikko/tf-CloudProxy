@@ -87,7 +87,7 @@ When done, the terminal should output the public IP address that was registered.
 ### Pre-req
 You need to create your tailscale secret inside your keyvault.
 
-**Create a tailscale `Container` tag**
+#### Create a tailscale `Container` tag
 This is needed for containers in tailnets. Since they are non-user machines.
 - Go to Access Controls
 - `json editor`
@@ -99,12 +99,12 @@ This is needed for containers in tailnets. Since they are non-user machines.
 	}
 ```
 
-**Create the tailscale auth key**
+#### Create the tailscale auth key
 You create a tailscale secret at Tailscale > Settings > Keys > Auth Keys section > Generate Auth key...
 - Make sure you enable "Tags"
 - Select the "`Container`" tag from the dropdown
 
-**Add the key to Azure**
+#### Add the key to Azure
 Go to Azure > select your subscription > go to `Key Vaults` and find the `cntpxykv` keyvault. 
 
 Then under the Objects left sidebar, find `Secrets` and select the `Create/Import` action from the navbar. (Azure changes names from time to time, so just find secrets and create one)

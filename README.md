@@ -1,6 +1,6 @@
 # Description
 A way to create containers in the cloud w/ tailscale for proxying traffic through a safe public IP. 
-- Made for 
+Made for:
 - security consultants
 - pentesters
 - sec researchers

@@ -1,5 +1,5 @@
 # Description
-A way to create containers in the cloud w/ tailscale for proxying traffic through a safe public IP. 
+A way to create containers in the cloud w/ tailscale for proxying traffic through a public IP from a cloud provider. 
 
 Made for:
 - security consultants
@@ -24,7 +24,7 @@ git clone https://github.com/DigitalMikko/tf-CloudProxy.git
 
 ## Add your Sub ID
 I've had some issues on my end with terraform seeing my Azure subscription ID in my terminal env vars. So I made a `terraform.tfvars` with a placeholder for you to add the ID. That's all.
-Edit the `terraform.tfvars` file in both /core & /runtime
+Edit the `terraform.tfvars` file in both `/core` & `/runtime` directories.
 ```sh
 # Template
 subscription_id = "Your-Sub-ID"

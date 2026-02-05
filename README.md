@@ -68,7 +68,7 @@ To deploy `Core`, all you need is to move (`cd`) into the `/core` directory and 
 
 This will get everthing setup in tf.
 ```sh
-	# Init
+# Init
 terraform init
 ```
 
@@ -91,7 +91,7 @@ This is needed for containers in tailnets. Since they are non-user machines.
 - Go to Access Controls
 - `json editor`
 - Add the following:
-```
+```json
 "tagOwners": {
 		// Docker containers
 		"tag:Container": ["autogroup:owner", "autogroup:admin"],
@@ -138,7 +138,7 @@ Because this setups uses tailnets, and we are using the SSH feature within tailn
 The container gets a private tailsnet IP which you should be able to see from your tailscale dashboard. 
 
 To make sure that works, go to the Access Controls section in Tailscale and enter the following using the `json editor` in the `"ssh"` section:
-```
+```json
 "ssh": [
 		{
 			"src":    ["autogroup:admin"],

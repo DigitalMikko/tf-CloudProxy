@@ -18,17 +18,12 @@ locals {
   # Edit these tags as you see fit. 
   common_tags = {
     purpose = "burp-egress"
-<<<<<<< HEAD
     owner   = "YourNameHere"
-=======
-    owner   = "AddYourNamehere"
->>>>>>> refs/remotes/origin/main
   }
 
   runtime_tags = merge(local.common_tags, {
     lifecycle = "runtime"
   })
-
 }
 
 

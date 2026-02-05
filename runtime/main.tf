@@ -17,7 +17,7 @@ locals {
   # Common tagging for budgets/alerts
   common_tags = {
     purpose = "burp-egress"
-    owner   = "Miguel"
+    owner   = "AddYourNamehere"
   }
 
   runtime_tags = merge(local.common_tags, {

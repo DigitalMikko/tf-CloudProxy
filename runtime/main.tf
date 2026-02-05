@@ -15,9 +15,10 @@ locals {
   egress_ip      = data.terraform_remote_state.core.outputs.egress_public_ip
 
   # Common tagging for budgets/alerts
+  # Edit these tags as you see fit. 
   common_tags = {
     purpose = "burp-egress"
-    owner   = "Miguel"
+    owner   = "YourNameHere"
   }
 
   runtime_tags = merge(local.common_tags, {

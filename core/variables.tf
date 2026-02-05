@@ -5,7 +5,7 @@ variable "subscription_id" {
 variable "location" {
   type    = string
   default = "eastus"
-  # You may also use any from here: `az account list-locations -o table`
+  # You may also use any from here ❯ az account list-locations -o table
 }
 
 variable "name_prefix" {

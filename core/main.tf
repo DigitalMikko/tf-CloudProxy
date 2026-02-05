@@ -4,7 +4,7 @@ locals {
   # Common tagging for budgets/alerts
   common_tags = {
     purpose = "burp-egress"
-    owner   = "Your Name Here"
+    owner   = "YourNameHere"
   }
 
   core_tags = merge(local.common_tags, {
@@ -19,7 +19,7 @@ resource "azurerm_resource_group" "core" {
 }
 
 resource "azurerm_key_vault" "kv" {
-  name                       = "${replace(var.name_prefix, "-", "")}kv01"
+  name                       = "${replace(var.name_prefix, "-", "")}kv"
   location                   = azurerm_resource_group.core.location
   resource_group_name        = azurerm_resource_group.core.name
   tenant_id                  = data.azurerm_client_config.current.tenant_id
